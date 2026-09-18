@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storyteller clips — lambda comparison</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+<main class="mx-auto max-w-3xl px-4 py-10">
+  <h1 class="text-2xl font-semibold tracking-tight">Storyteller clips — lambda comparison</h1>
+  <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+    content-service stage &middot; <span class="font-mono">d6f2b49ef5f8f068</span> &middot;
+    <span class="font-mono">com.metro.minus1</span> &middot; sports profile &middot; 300 clips &middot; captured 17-09-2026
+  </p>
+  <p class="mt-4 max-w-prose text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+    Each page shows the same feed with a different lambda value. Lambda controls how much the
+    personalisation profile changes the order of the clips. Ranks on the four lower pages are
+    compared against the lambda 0 baseline.
+  </p>
+  <ul class="mt-8 flex flex-col divide-y divide-slate-200 dark:divide-slate-800">
+    <li><a class="flex items-baseline gap-3 py-3 hover:text-sky-600 dark:hover:text-sky-400" href="storyteller_clips_lambda000.html">
+      <span class="w-16 shrink-0 font-mono text-sm text-slate-500">&lambda; 0</span>
+      <span class="font-medium">Baseline order</span>
+      <span class="ml-auto text-sm text-slate-500">no profile applied</span></a></li>
+    <li><a class="flex items-baseline gap-3 py-3 hover:text-sky-600 dark:hover:text-sky-400" href="storyteller_clips_lambda025.html">
+      <span class="w-16 shrink-0 font-mono text-sm text-slate-500">&lambda; 0.25</span>
+      <span class="font-medium">Small effect</span>
+      <span class="ml-auto text-sm text-slate-500">sports profile</span></a></li>
+    <li><a class="flex items-baseline gap-3 py-3 hover:text-sky-600 dark:hover:text-sky-400" href="storyteller_clips_lambda050.html">
+      <span class="w-16 shrink-0 font-mono text-sm text-slate-500">&lambda; 0.5</span>
+      <span class="font-medium">Medium effect</span>
+      <span class="ml-auto text-sm text-slate-500">sports profile</span></a></li>
+    <li><a class="flex items-baseline gap-3 py-3 hover:text-sky-600 dark:hover:text-sky-400" href="storyteller_clips_lambda070.html">
+      <span class="w-16 shrink-0 font-mono text-sm text-slate-500">&lambda; 0.7</span>
+      <span class="font-medium">Large effect</span>
+      <span class="ml-auto text-sm text-slate-500">sports profile</span></a></li>
+    <li><a class="flex items-baseline gap-3 py-3 hover:text-sky-600 dark:hover:text-sky-400" href="storyteller_clips_lambda100.html">
+      <span class="w-16 shrink-0 font-mono text-sm text-slate-500">&lambda; 1.0</span>
+      <span class="font-medium">Full effect</span>
+      <span class="ml-auto text-sm text-slate-500">sports profile</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
